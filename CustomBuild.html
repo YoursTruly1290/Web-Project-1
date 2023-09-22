@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <!-- Semantic tag -->
-  <header>
-    <meta charset="utf-8" />
-    <meta name="" viewport content="intial-scale=1.0, user-scalable=yes" />
-    <!-- Title of the Webpage -->
-    <title>Custom PC Build</title>
-  </header>
+  <head>
+    <!-- Semantic tag -->
+    <header>
+      <meta charset="utf-8"/>
+        <meta name=""viewport content="intial-scale=1.0, user-scalable=yes"/>
+      <!-- Title of the Webpage -->
+      <title>Custom PC</title>
+    </header>
+  </head>
+
   <!-- Body of the webpage -->
   <body style="font-family: Arial, Helvetica, sans-serif; background-color: black;">
     <!-- Title of the body -->
     <center><h1 style="font-family: 'Courier New', Courier, monospace; color: gold;"><i>Custom PC Build</i></h1></center>
     <hr>
-    <!-- Intro paragraph -->
-    <p style="color: white;">Hey there, in this webpage you can fill out the information in the form bellow 
+    
+    <main>
+      <!-- Intro paragraph -->
+      <p style="color: white;">Hey there, in this webpage you can fill out the information in the form bellow 
       to get a free list of components that will suit your needs perfectly!</p>
+
       <!-- Form for client information and needs -->
-    <form name="user-custom-build-info" method="GET" style="color: white;" action="Done.html">
-      <fieldset form="user-personal-info">
-        <legend>Personal Information</legend>
-        <!-- First name -->
-        <label for="fName">&ast;Enter your first name: </label>
-        <input type="text" name="fName" id="fName" required placeholder="John"/><br />
-        <!-- Last name -->
-        <label for="lName">&ast;Enter your last name: </label>
-        <input type="text" name="lName" id="fName" required placeholder="Doe"/><br />
-        <!-- Phone number -->
-        <label for="phone">&ast;Enter your phone number (x-xxx-xxx-xxxx):</label>
-        <input type="tel" name="Phone" id="phone" required placeholder="1-123-456-7890"/><br />
-        <!-- email -->
-        <label for="email">&ast;Enter your E-mail</label>
-        <input type="email" name="email" id="email" required placeholder="JohnDoe@example.com"/><br />
+      <form name="user-custom-build-info" method="GET" style="color: white;" action="Done.html">
+        <fieldset form="user-personal-info">
+          <legend>Personal Information</legend>
 
-      </fieldset>
+          <!-- First name -->
+          <label for="fName">&ast;Enter your first name: </label>
+          <input type="text" name="fName" id="fName" required placeholder="John"/><br />
 
-      <!-- Client PC Needs -->
-      <fieldset>
-        <legend>Custom PC </legend>
-        <!-- Their budget -->
-        <label for="vol" style="color: white;">Price (between &dollar;0 and &dollar;5000):</label>
-        <input type="range" value="0" min="0" max="5000" oninput="this.nextElementSibling.value = this.value"/>
-        <output style="color: white;">0</output><br />
-        <br />
-        <br />
+          <!-- Last name -->
+          <label for="lName">&ast;Enter your last name: </label>
+          <input type="text" name="lName" id="fName" required placeholder="Doe"/><br />
 
-        <!-- form factor -->
-        <p style="color: white;">Pick your form factor (size):</p>
-        <input type="radio" name="formfactor" id="small" />
-        <label for="small">Small Form Factor (SFF)</label><br />
+          <!-- Phone number -->
+          <label for="phone">&ast;Enter your phone number (x-xxx-xxx-xxxx):</label>
+          <input type="tel" name="Phone" id="phone" required placeholder="1-123-456-7890"/><br />
 
-        <input type="radio" name="formfactor" id="mid" />
-        <label for="mid">Mid Tower</label><br />
+          <!-- email -->
+          <label for="email">&ast;Enter your E-mail</label>
+          <input type="email" name="email" id="email" required placeholder="JohnDoe@example.com"/><br />
+        </fieldset>
 
-        <input type="radio" name="formfactor" id="full" />
-        <label for="full">Full Tower</label><br />
-        <br />
-        <br />
+        <!-- Client PC Needs -->
+        <fieldset>
+          <legend>Custom PC </legend>
+          
+          <!-- Their budget -->
+          <label for="vol" style="color: white;">Price (between &dollar;0 and &dollar;5000):</label>
+          <input type="range" value="0" min="0" max="5000" oninput="this.nextElementSibling.value = this.value"/>
+          <output style="color: white;">0</output><br />
+          <br />
+          <br />
 
-        <!-- Storage needs -->
-        <label for="storage">Pick how much storage you need (in TB): </label>
-        <input type="text" name="storage" id="storage" />
-        <br />
-        <br />
+          <!-- form factor -->
+          <p style="color: white;">Pick your form factor (size):</p>
+          <input type="radio" name="formfactor" id="small" />
+          <label for="small">Small Form Factor (SFF)</label><br />
 
-        <!-- What games they want to play on their new pc? -->
-        <p style="color: white;">What games do you want to play on your new PC?</p>
-        <textarea name="extra" id="" cols="30" rows="5"></textarea>
-      </fieldset>
-      <p style="color: white;">Submit the form: </p>
-      <input type="submit" value="Submit"/>
-    </form>
+          <input type="radio" name="formfactor" id="mid" />
+          <label for="mid">Mid Tower</label><br />
+
+          <input type="radio" name="formfactor" id="full" />
+          <label for="full">Full Tower</label><br />
+          <br />
+          <br />
+
+          <!-- Storage needs -->
+          <label for="storage">Pick how much storage you need (in TB): </label>
+          <input type="text" name="storage" id="storage" />
+          <br />
+          <br />
+
+          <!-- What games they want to play on their new pc? -->
+          <p style="color: white;">What games do you want to play on your new PC?</p>
+          <textarea name="extra" id="" cols="30" rows="5"></textarea>
+        </fieldset>
+        <p style="color: white;">Submit the form: </p>
+        <input type="submit" value="Submit"/>
+      </form>
+    </main>
     <br />
     <br />
     <br />
